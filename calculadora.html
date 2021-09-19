@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<script>
+    alert("olá seja bem vinda a calculadora.")
+
+    var n1 = parseInt(prompt("digite o primeiro número da sua operação."));
+    var operação = prompt("digite a operação que deseja fazer, ex:(*,+,-,/)");
+    var n2 = parseInt(prompt("digite o segundo número da sua operação."));
+
+    function mostra(texto) {
+        document.write(texto);
+    }
+
+    if(operação == "+") {
+        alert("A RESPOSTA DE " + n1 + operação + n2 + " E IGUAL A: " + (n1 + n2))
+    }
+
+    if(operação == "-") {
+        alert("A RESPOSTA DE " + n1 + operação + n2 + " E IGUAL A: " + (n1 - n2))
+    }
+
+    if(operação == "*") {
+        alert("A RESPOSTA DE " + n1 + operação + n2 + " E IGUAL A: " + (n1 * n2))
+    }
+
+    if(operação == "/") {
+        alert("A RESPOSTA DE " + n1 + operação + n2 + " E IGUAL A: " + (n1 / n2))
+    }
+
+    mostra("Sua operação foi realizada, caso queria fazer outra operação, atualize a pagina.");
+    
+</script>
